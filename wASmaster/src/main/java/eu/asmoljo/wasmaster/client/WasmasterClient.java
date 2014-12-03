@@ -102,7 +102,7 @@ public class WasmasterClient {
 	
 	
 	//KREIRANJE ADMIN CLIENTA
-	public static void createAdminClient(String selectedServer) throws Throwable {
+	public static void createAdminClient(String soapServer) throws Throwable {
 
 	
 		// Setiranje Properties objekta za JMX connector attributes
@@ -155,7 +155,7 @@ public class WasmasterClient {
 				DataSourceBuilder dsb = new DataSourceBuilder(adminClient);
 				dsb.createDataSourceScript("ServerCluster","test1_clus", "DB2 Universal JDBC Driver Provider (XA)","Testni2 JDBC Provider ASMOLJO","Description for Testni2 JDBC Provider ASMOLJO");
 			}
-			else if (actionName.equalsIgnoreCase("mtp")) {
+			else if (actionName.equalsIgnoreCase("tpm")) {
 				System.out.println("Selected action is: " +actionName+"\n");
 				ThreadPoolManager tpm = new ThreadPoolManager(adminClient);
 					if(mode.equalsIgnoreCase("script")){

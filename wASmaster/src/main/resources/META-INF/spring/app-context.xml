@@ -20,10 +20,10 @@
 
 	<context:component-scan base-package="eu.asmoljo.wasmaster.client" />
 	
-	<context:property-placeholder location="classpath:rhel3.properties"/>
+	<context:property-placeholder location="classpath:rhel7a.properties"/>
 	
 	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
-		<property name="basename" value="rhel3"></property>
+		<property name="basename" value="rhel7a"></property>
 	</bean>
 	
 

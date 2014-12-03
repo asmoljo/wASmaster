@@ -30,6 +30,9 @@ public class WasmasterCli {
 		connectProps.setProperty("javax.net.ssl.trustStorePassword", rbms.getMessage("Trust_store_pwd", null, null));
 		connectProps.setProperty("java.home", rbms.getMessage("Java_Home", null, null));
 		System.setProperty("com.ibm.ssl.performURLHostNameVerification", "true");
+		
+		/** OVDJE IMA NEKIH PROBLEMA PA SAM ZAKOMENTIRAO A I NEZNAM CEMU SLUZI OVA KLASA OD PRIJE,PA CE VJEROVATNO BIT ZA BRISANJE KASNIJE
+		
 		// Kreiranje adminClienta na osnovu connector propertya
 			try {
 				adminClient = AdminClientFactory.createAdminClient(connectProps);
@@ -40,6 +43,8 @@ public class WasmasterCli {
 				System.out.println(err + "\n"+"Greska kod spajanja klijenta na WAS. Provjerite parametre u properties datotekama i certifikate u trust keystoreu. ");
 				System.exit(0);
 			}
+			
+			*/
 		
 	}
 	
